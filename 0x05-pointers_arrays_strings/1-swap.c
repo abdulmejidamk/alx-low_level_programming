@@ -5,7 +5,7 @@
  * @b: ptr to integer number 2
  *
  * Return: void
- * /
+ */
 
 void swap_int(int *a, int *b)
 {
