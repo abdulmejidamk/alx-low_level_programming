@@ -1,18 +1,29 @@
 #include "main.h"
 /**
  * _strcat - concats strings
- * @destination: string pointer 1
- * @source: string pointer 2
+ * @dest: string pointer 1
+ * @src: string pointer 2
  * Return: dest
  */
 
-char* my_strcat(char* destination, const char* source)
+char *_strcat(char *dest, char *src)
 {
-char* ptr = destination + strlen(destination);
-while (*source != '\0')
+int i, j;
+i = 0;
+
+while (dest[i] != '\0')
 {
-*ptr++ = *source++;
+i++;
 }
-*ptr = '\0';
-return destination;
+j = 0;
+
+while (src[j] != '\0')
+{
+dest[i] = src[j];
+i++;
+j++;
+}
+
+dest[i] = '\0';
+return (dest);
 }
